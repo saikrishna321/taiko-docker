@@ -1,0 +1,18 @@
+{
+  "name": "taiko-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require esm --timeout=900000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "mocha": "^8.1.2",
+    "save": "^2.4.0",
+    "taiko": "^1.0.19",
+    "esm": "^3.2.25"
+  }
+}

@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  taiko:
+    image: taiko/docker:v1
+    container_name: taiko-test
+    environment:
+        - TAIKO_SKIP_CHROMIUM_DOWNLOAD=true
+        - TAIKO_BROWSER_PATH=/usr/bin/chromium-browser
+        - TAIKO_BROWSER_ARGS=--no-sandbox,--start-maximized
+        - headless_chrome=true
+    volumes:
+      - .:/usr/src/app:rw
+    command: npm install
+    command: npm test
